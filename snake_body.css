@@ -1,0 +1,87 @@
+/* SNAKE BODY COMMON CODE */
+.head,.body{
+    /* border: 2px solid black; */
+    border-left: 2px solid black;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(42, 154, 42);
+    z-index: 1;
+}
+
+/* SNAKE HEAD */
+.head,.eyes{
+    display: flex;
+}
+
+.head{
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* EYES START*/
+.eyes{
+    align-items: center;
+    position: relative;
+    right: -15px;
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.eyeball{
+    position: relative;
+    height: 4px;
+    width: 4px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+    left: 8px;
+    animation: eyes 5s linear infinite normal ;
+}
+/* EYES END */
+
+
+.b4{
+    border-top-left-radius:10px ;
+    border-bottom-left-radius:10px ;
+}
+/* TAIL */
+.tail{
+    border-top: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-right: 16px solid rgb(42, 154, 42);
+    border-bottom: 16px solid transparent;
+    height: 0px;
+    background: transparent;
+    transform: scaleX(2);
+    position: relative;
+    right: 15px;
+    top: 4px;
+    z-index: 1;
+}
+/* TAIL */
+
+/* FOOD */
+.apple{
+    position: relative;
+    bottom: 5px;
+}
+.a1{
+    animation: apple 6s linear infinite normal ;
+}
+.a2{
+    left: 500px;
+    animation: apple2 6s linear infinite normal ;
+}
+.a3{
+    left: 1000px;
+    animation: apple3 6s linear infinite normal ;
+}
+img{
+    height: 40px;
+    z-index: -1;
+}
+

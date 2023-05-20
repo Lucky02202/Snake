@@ -1,0 +1,67 @@
+/* ANIMATION */
+.head,.body{
+    animation: movement 6s linear 0s infinite ;
+}
+.tail{
+    animation: movement1 6s linear 0s infinite ; 
+}
+
+@keyframes movement {
+    100%{
+        transform: translateX(1600px);
+    }
+}
+@keyframes movement1 {
+    100%{
+        transform:scaleX(2) translateX(800px);
+    }
+}
+
+@keyframes eyes {
+    25%{
+        transform: translate(-5px,-5px);
+    }
+    50%{
+        transform: translate(0px,0px);
+    }
+    75%{
+        transform: translate(-5px,5px);
+    }
+}
+
+/*  */
+@keyframes apple {
+    10%{
+        transform: scale(0);
+    }
+    99%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes apple2 {
+    39%{
+        transform: scale(1);
+    }
+    40%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+@keyframes apple3 {
+    79%{
+        transform: scale(1);
+    }
+    80%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+
+/* ANIMATION ENDS */
